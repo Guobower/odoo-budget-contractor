@@ -24,5 +24,14 @@
             <field name="category_id" ref="category_contractor"/>
             <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
         </record>
+
+        <!-- END USER -->
+        <record id="group_contractor_end_user" model="res.groups">
+            <field name="name">End User</field>
+            <field name="category_id" ref="category_contractor"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+
     </data>
 </odoo>
